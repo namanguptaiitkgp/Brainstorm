@@ -21,26 +21,36 @@
     
 <style>
 .hero-area {
-    background: url(img/Untitled.jpg) no-repeat;}      
+    background: url(img/Wr5q8.jpg) no-repeat;}      
+    .affix {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    padding: 0!important;
+    background: white !important;
+}
+
+
+/*
+    .mdi-navigation-menu:before {
+    color: black;
+}
+*/
+    #features .features h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
 </style>
   </head>
 
   <body>
 
-    <div class="navbar navbar-invers menu-wrap">
-      <div class="navbar-header text-center">
-        <a class="navbar-brand logo-right" href="javascript:void(0)">Menu</a>
-      </div>
-        <ul class="nav navbar-nav main-navigation">
-          <li class="active"><a href="#home">Home</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#why">About Us</a></li>
-          <li><a href="#screenshot">Portfolio</a></li>
-          <li><a href="#testimonial">Testimonial</a></li>
-          <li><a href="#clients">Contact</a></li>
-        </ul>
-        <button class="close-button" id="close-button">Close Menu</button>
-    </div>
+    
   	
   	<div class="content-wrap">
      <header class="hero-area" id="home">
@@ -51,21 +61,39 @@
             <div class="navbar navbar-inverse sticky-navigation navbar-fixed-top" role="navigation" data-spy="affix" data-offset-top="200">
               <div class="container">
                 <div class="navbar-header">
-                  <a class="logo-left " href="index.html"><img src="bslogo.png" valign="center">  Brainstorm Tech</a>
+                  <a class="logo-left " href="index.html" ><img src="imageedit_8_3135523788.png" valign="center">  Brainstorm Technologies</a>
                 </div>
-                <div class="navbar-right">
-                  <button class="menu-icon"  id="open-button">
-                    <i class="mdi-navigation-menu"></i>
-                  </button>             
-                </div>
+                  
+                   <div class="navbar-right"  >
+   
+      <div class="nav navbar-nav navbar-right" ><br>
+       <li class="dropdown" >
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="mdi-navigation-menu"></i></a> 
+                              
+        
+        
+          
+          <ul class="dropdown-menu">
+           <li><a href="#features">Features</a></li>
+          <li><a href="#why">About Us</a></li>
+          <li><a href="#screenshot">Portfolio</a></li>
+          <li><a href="#testimonial">Testimonial</a></li>
+          <li><a href="#clients">Contact</a></li>
+            
+          </ul>
+          </li>
+      </div>
+    </div>
               </div>
+           
             </div>
+            
         </div>        
         <div class="contents text-right">
           <h1 class="wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Brainstorm Technologies</h1>
           <p class="wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms">We help you to meet your business objectives.</p>
           <a href="#features" class="btn btn-lg btn-border wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">Get Started</a>
-          <a href="#why" class="btn btn-lg btn-primary wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">About US</a>
+         
         </div>   
     </header>
 
@@ -204,17 +232,16 @@
           <div class="col-md-8 col-sm-8 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
             <div class="feature-item">
               <h3 class="title-small">
-                Dummy Section
+                Training
               </h3>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has been the industry's 
-                standard dummy text, when an unknown printer took a galley of type and scrambled it to 
-                make a type specimen book. It has survived not only five centuries, but also the leap into electronicstandard 
-                dummy text ever since the1500s, when an unknown printer took a galley of type and scrambled it to 
-                make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                <h4>Middleware technologies</h4>
+                Middleware technologies help you integrate with SAP, Databases, MQ, Seibel and other backend and frontend systems. IBM Integration Bus previously known as WebSphere Message Broker is an enterprise service bus providing connectivity and data transformation across SOA and non-SOA environments. IBM Integration Bus provides connectivity and universal data transformation in heterogeneous IT environments. It enables businesses of any size to eliminate point-to-point connections and batch processing, regardless of operating system, protocol, and data format. IBM MQ provides the means by which communication exists between lines-of-business or otherwise separate business domains.
+We Provide Extensive Training & Technical Assistance on IIB & WMQ
+
               </p>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                
               </p>
             </div>
           </div>
@@ -224,6 +251,31 @@
           </div>  
 
         </div>
+         <div class="row">   
+          <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <img src="img/features/fet2.png" class="img-responsive" alt="">
+          </div>    
+
+          <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <div class="feature-item">
+              <h3 class="title-small">
+                Set a goal and improve your lifestyle
+              </h3>
+              <p>
+                Automation testing Tools<br>
+We provide professional training on cutting edge tools like Selenium, Coded UI to help you achieve higher efficiency with lower cost. Automation of software helps in finding bugs in regression testing and seamless integration of modules without manual intervention.
+
+
+              </p>
+              <p>
+               Manual Testing Tools<br>
+We train you in services like black box testing, white box testing, sanity testing, regression testing and User Acceptance testing so that your employees will be self-efficient and with tools like HP-ALM, MTM defect tracking is a breeze. That will in turn help you to produce a greater working software.
+              </p>
+            </div>
+          </div>
+          
+        </div>
+
 
       </div>
     </section>
