@@ -20,73 +20,105 @@
     <link href="css/animate.min.css" rel="stylesheet">
     
 <style>
-
-.hero-area .sticky-navigation {
-    background: white;
-}
 .hero-area {
-    background: url(img/portfolio-background.jpg) no-repeat;}      
-    .affix {
+    background: url(img/Untitled.jpg) no-repeat;}      
+</style>
 
-    background: white !important;
+
+<style>
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+html, body
+{
+    margin: 0px;
 }
 
 
-
-    .mdi-navigation-menu:before {
-    color: black;
-}
-    #features .features h4 {
-
-    color: black;
-}
-.navbar-fixed-top {
-    padding: 5px 0;
+div.container
+{
+    font-family: Raleway;
+    margin: 0;
+	padding: 2em 0em;
+	
+	width: 100%;
 }
 
-@media only screen and (max-width: 1026px) { 
-  #fadeshow1 { 
-    display: none; 
-  } 
-  
-}
-@media only screen and (min-width: 1026px) { 
-  .navbar-right { 
-    display: none; 
-  } 
-  
-}    
-.mdi-navigation-menu:before {
-    color: black;
-    padding-right: 50px;
-}
-    #new1{font-size: 16px;
-    padding: 13px 16px;
-    
+div.container a
+{
+    color: #FFF;
     text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 0px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
 }
-a:link {
-    color: black;
+
+.cyan
+{
+    background: #00bcd4;
+}
+
+.teal
+{
+    background: #009688;
 }
 
 
-/* mouse over link */
-a:hover {
-    color: blue;
+div.brackets a:before, div.brackets a:after
+{
+    position: absolute;
+    opacity: 0;
+    font-size: 35px;
+    top: 0px;
+    transition: all 0.3s;
 }
 
-/* selected link */
-a:active {
-    color: blue;
+div.brackets a:before
+{
+    content: '(';
+    left: 0px;
+    transform: translateX(10px);
 }
+
+div.brackets a:after
+{
+    content: ')';
+    right: 0px;
+    transform: translateX(-10px);
+}
+
+div.brackets a:hover:before, div.brackets a:hover:after
+{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
 
 </style>
   </head>
 
   <body>
- 
-<!--
-    <div class="navbar navbar-invers menu-wrap">
+
+
+
+
+<div class="container cyan" >
+<a class="logo-left " href="index.html"><img src="bslogo.png" valign="center" style="height: 70px;">  Brainstorm Tech</a>
+<div style="text-align: right;">
+  <a>HOME</a>
+  <a>VIVEK</a>
+  <a>VIVEK1</a>
+  <a>VIVEK2</a>
+  <a>VIVEK3</a>
+</div>
+</div>
+
+
+
+
+  <!--  <div class="navbar navbar-invers menu-wrap">
       <div class="navbar-header text-center">
         <a class="navbar-brand logo-right" href="javascript:void(0)">Menu</a>
       </div>
@@ -99,8 +131,7 @@ a:active {
           <li><a href="#clients">Contact</a></li>
         </ul>
         <button class="close-button" id="close-button">Close Menu</button>
-    </div>
--->
+    </div> -->
   	
   	<div class="content-wrap">
      <header class="hero-area" id="home">
@@ -108,45 +139,30 @@ a:active {
       <div class="container">
           <div class="col-md-12">
 
-            <div class="navbar navbar-inverse sticky-navigation navbar-fixed-top" role="navigation" data-spy="affix" data-offset-top="200">
+           <!-- <div class="navbar navbar-inverse sticky-navigation navbar-fixed-top" role="navigation" data-spy="affix" data-offset-top="200">
               <div class="container">
-                <div class="navbar-header" >
-                   <a  class="logo-left" href="index.html" style="color:black;"><img src="imageedit_7_4563652105.png" valign="center" > <span id="fadeshow1" >Brainstorm Technologies</span></a>
-                </div><br>
-                <div style="text-align: right;" id="fadeshow1" >
-  <a href="#why" id="new1">About Us</a>
-  <a href="#features" id="new1">Features</a>
-    <a href="/blog/" id="new1">Blog</a>
-  <a href="#testimonial" id="new1">Testimonial</a>
-</div><br>
+                <div class="navbar-header">
+                  <a class="logo-left " href="index.html"><img src="bslogo.png" valign="center">  Brainstorm Tech</a>
+                </div>
                 <div class="navbar-right">
-                  <li class="dropdown" >
-                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="mdi-navigation-menu"></i></a> 
-                              
-        
-        
-          
-          <ul class="dropdown-menu">
-           <li><a href="#features">Features</a></li>
-          <li><a href="#why">About Us</a></li>
-          <li><a href="http://www.curiousflyer.com/blog/">Blog</a></li>
-          <li><a href="#screenshot">Portfolio</a></li>
-          <li><a href="#testimonial">Testimonial</a></li>
-          <li><a href="#clients">Contact</a></li>
-            
-          </ul>
-          </li>            
+                  <button class="menu-icon"  id="open-button">
+                    <i class="mdi-navigation-menu"></i>
+                  </button>             
                 </div>
               </div>
-            </div>
-        </div>    
+            </div> -->
+
+
+
+
+
+        </div>        
         <div class="contents text-right">
           <h1 class="wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Brainstorm Technologies</h1>
           <p class="wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms">We help you to meet your business objectives.</p>
           <a href="#why" class="btn btn-lg btn-primary wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Get Started</a>
-<!--          <a href="#features" class="btn btn-lg btn-border wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">Contact Us</a>-->
-        </div>
-     </div>       
+          <a href="#features" class="btn btn-lg btn-border wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">Contact Us</a>
+        </div>   
     </header>
 
     <section id="features" class="section">
@@ -276,59 +292,7 @@ a:active {
         </div>
       </div>
     </section>
-     <section id="main-features" class="section main-feature-gray">
-      <div class="container">
 
-        <div class="row">   
-          <div class="col-md-8 col-sm-8 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <div class="feature-item">
-              <h3 class="title-small">
-                Training
-              </h3>
-              <p>
-                <h4><b>Middleware technologies</b></h4>
-                Middleware technologies help you integrate with SAP, Databases, MQ, Seibel and other backend and frontend systems. IBM Integration Bus previously known as WebSphere Message Broker is an enterprise service bus providing connectivity and data transformation across SOA and non-SOA environments. IBM Integration Bus provides connectivity and universal data transformation in heterogeneous IT environments. It enables businesses of any size to eliminate point-to-point connections and batch processing, regardless of operating system, protocol, and data format. IBM MQ provides the means by which communication exists between lines-of-business or otherwise separate business domains.
-We Provide Extensive Training & Technical Assistance on IIB & WMQ
-
-              </p>
-              <p>
-                
-              </p>
-            </div>
-          </div>
-          
-          <div class="col-md-4 col-sm-4 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <img src="img/features/fet1.png" class="img-responsive" alt="">
-          </div>  
-
-        </div>
-         <div class="row">   
-          <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <img src="img/features/fet2.png" class="img-responsive" alt="">
-          </div>    
-
-          <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <div class="feature-item">
-              
-              <p>
-                <h4><b>Automation testing Tools</b></h4>
-We provide professional training on cutting edge tools like Selenium, Coded UI to help you achieve higher efficiency with lower cost. Automation of software helps in finding bugs in regression testing and seamless integration of modules without manual intervention.
-
-
-              </p>
-              <p>
-               <h4><b>Manual Testing Tools</b></h4>
-We train you in services like black box testing, white box testing, sanity testing, regression testing and User Acceptance testing so that your employees will be self-efficient and with tools like HP-ALM, MTM defect tracking is a breeze. That will in turn help you to produce a greater working software.
-              </p>
-            </div>
-          </div>
-          
-        </div>
-
-
-         </div>
-    </section>
-<!--
      <section id="main-features" class="section main-feature-gray">
       <div class="container">
 
@@ -422,9 +386,7 @@ We train you in services like black box testing, white box testing, sanity testi
 
       </div>
     </section>
--->
 
-<!--
     <section id="cta">
       <div class="container">
         <div class="row text-center">         
@@ -447,10 +409,8 @@ We train you in services like black box testing, white box testing, sanity testi
       </div>
 
     </section>
--->
 
 
-<!--
     <section id="other-features">
       <div class="container">
         <div class="section-header">
@@ -533,7 +493,6 @@ We train you in services like black box testing, white box testing, sanity testi
         </div>
       </div>
     </section>
--->
 
 
     <section id="testimonial" class="section">
@@ -667,7 +626,6 @@ We train you in services like black box testing, white box testing, sanity testi
     </section>
 
 
-<!--
     <section id="contact">
       <div class="container">
         <div class="row">
@@ -726,167 +684,12 @@ We train you in services like black box testing, white box testing, sanity testi
         </div>
       </div>
     </section>    
--->
-<section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <h2 class="section-title">That's Where We Are</h2>
-            <div class="row">
-              <div class="col-md-6 col-sm-6">
-                <div class="info">
-                  <div class="icon">
-                    <i class="mdi-maps-map"></i>
-                  </div>
-                  <h4>Location</h4>
-                  <p>1603 Capitol Ave ,Wyoming,USA</p>
-                </div>
-              </div>
-              <div class="col-md-6 col-sm-6">
-                <div class="info">
-                  <div class="icon">
-                    <i class="mdi-content-mail"></i>
-                  </div>
-                  <h4>Email</h4>
-                  <p>contact@brainstormtechnologiesllc.com</p>
-                </div>
-              </div>
-              <div class="clear"></div>
-              <div class="col-md-6 col-sm-6">
-                <div class="info">
-                  <div class="icon">
-                    <i class="mdi-action-settings-phone"></i>
-                  </div>
-                  <h4>Phone Number</h4>
-                  <p>0753 016 572</p>
-                </div>
-              </div>
-              <div class="col-md-6 col-sm-6">
-                <div class="info">
-                  <div class="icon">
-                    <i class="mdi-action-thumb-up"></i>
-                  </div>
-                  <h4>Social Media</h4>
-                  <p>@brainstormtech</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <h2 class="section-title">Love to Hear From You</h2>
 
-            <div class="text-center">
-                <h3><a rel="nofollow" href="https://rebrand.ly/gg-pluto-purchase">Consulting is a big part of us through which we help you in leading-edge technology solutions to meet your business objectives.</a></h3>
-                
-            </div>
-
-
-          </div>
-        </div>
-      </div>
-    </section> 
-<!--
     <div class="map-area">      
       <div class="map">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6853.31334931688!2d149.5710983929677!3d-33.43399308961885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x63680231a1016da2!2sWestern+Region+Academy+of+Sport!5e0!3m2!1sen!2sbd!4v1436826340086" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
        </div>
     </div>
-
-    <section id="footer">
-      <div class="container">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <h3>Products</h3>
-              <ul>
-                <li><a href="http://wingthemes.com/">WingThemes</a>
-                </li>
-                <li><a href="http://graygrids.com/">Graygrids</a>
-                </li>
-                <li><a href="http://wpbean.com/">WPBean</a>
-                </li>
-                <li><a href="http://landingbow.com/">Landingbow</a>
-                </li>
-                <li><a href="http://freebiescircle.com/">FreebiesCicle</a>
-                </li>               
-              </ul>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <h3>FAQs</h3>
-              <ul>
-                <li><a href="#">Why choose us?</a>
-                </li>
-                <li><a href="#">Where we are?</a>
-                </li>
-                <li><a href="#">Fees</a>
-                </li>
-                <li><a href="#">Guarantee</a>
-                </li>
-                <li><a href="#">Discount</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <h3>About</h3>
-              <ul>
-                <li><a href="#">Career</a>
-                </li>
-                <li><a href="#">Partners</a>
-                </li>
-                <li><a href="#">Team</a>
-                </li>
-                <li><a href="#">Clients</a>
-                </li>
-                <li><a href="#">Contact</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <h3>Find us on</h3>
-              <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-              <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-              <a class="social" href="#" target="_blank"><i class="fa fa-google-plus"></i></a>
-            </div>
-          </div>
-        </div>  
-      </div>      
-       Go to Top Link 
-      <a href="#home" class="btn btn-primary back-to-top">
-      <i class=" mdi-hardware-keyboard-arrow-up"></i>
-      </a>
-    </section> 
-
-    <section id="copyright">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p class="copyright-text">
-             © Pluto 2015 All right reserved. Designed and Developed by 
-              <a rel="nofollow" href="http://graygrids.com/">
-                GrayGrids
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>     
--->
-<!--
-  <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
-<div style='overflow:hidden;height:400px;'>
-<div id='gmap_canvas' style='height:400px;width:1920px;'>
-    
-</div>
-<div>
-<small><a href="https://embedgooglemaps.com/en/how-to-embed-google-maps-into-your-website/">embedgooglemaps.com</a></small>
-</div>
-<div>
-<small><a href="https://ww.premiumlinkgenerator.com/">https://plg.com</a></small>
-</div>
-<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
-</div>
-<script type='text/javascript'>function init_map(){var myOptions = {zoom:16,center:new google.maps.LatLng(41.1329508,-104.8152101),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(41.1329508,-104.8152101)});infowindow = new google.maps.InfoWindow({content:'<strong>BrainStorm Technologies</strong><br>1603 Capitol Ave. Suite #310 City: Cheyenne State: Wyoming 82001<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
--->
 
     <section id="footer">
       <div class="container">
@@ -957,16 +760,15 @@ We train you in services like black box testing, white box testing, sanity testi
         <div class="row">
           <div class="col-md-12">
             <p class="copyright-text">
-             © BrainStorm Technologies LLC 2017 All right reserved. Designed and Developed by 
+             © Pluto 2015 All right reserved. Designed and Developed by 
               <a rel="nofollow" href="http://graygrids.com/">
-                NamanGupta
+                GrayGrids
               </a>
             </p>
           </div>
         </div>
       </div>
     </section>     
-  
     </div>  
 		
 
